@@ -14,7 +14,7 @@ public class EmployeeController {
 
     @GetMapping("/getAllEmployees")
     public List<Employee> getAllEmployees(){
-
+        System.out.println("I am in Controller getAllEmployees");
         return Arrays.asList(new Employee("Mohamed", "78348"), new Employee("Yasir", "90900"));
     }
 }
